@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: aliceblue;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .Rubiks-cube{
+            height: 200px;
+            width: 200px;
+            perspective: 600px;
+        }
+        .cube{
+            height: 200px;
+            width: 200px;
+            transform-style: preserve-3d;
+            position: relative;
+            animation: spin 10s infinite linear;
+        }
+        .side{
+            height: 200px;
+            width: 200px;
+            border: 2px solid;
+            position: absolute;
+        }
+        .front{
+            background-color: red;
+            transform: translateZ(100px);
+        }
+        .back{
+            background-color: yellow;
+            transform: rotateY(180deg) translateZ(100px);
+        }
+        .left{
+            background-color: blue;
+            transform: rotateY(90deg) translateZ(100px);
+
+        }
+        .right{
+            background-color: white;
+            transform: rotateY(-90deg) translateZ(100px);
+
+        }
+        .top{
+            background-color: green;
+            transform: rotateX(90deg) translateZ(100px);
+
+        }
+        .bottom{
+            background-color: orange;
+            transform: rotateX(-90deg) translateZ(100px);
+
+        }
+        .cube-row{
+            height: 33.33%;
+            width: 100%;
+            border: 2px solid ;
+            display: flex;
+            align-items: center;
+        }
+        .cube-cells{
+            height: 70px;
+            width: 70px;
+            border: 2px solid;
+        }
+
+        @keyframes spin {
+            0%{
+                transform: rotateX(0deg) rotateY(0deg);
+            }
+            100%{
+                transform: rotateX(360deg) rotateY(360deg);
+
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <main class="Rubiks-cube">
+        <section class="cube">
+            <article class="side front">
+                <aside class="cube-row">
+                    <div class="cube-cells"></div>
+                    <div class="cube-cells"></div>
+                    <div class="cube-cells"></div>
+                </aside>
+                 <aside class="cube-row">
+                    <div class="cube-cells"></div>
+                    <div class="cube-cells"></div>
+                    <div class="cube-cells"></div>
+                </aside>
+                 <aside class="cube-row">
+                    <div class="cube-cells"></div>
+                    <div class="cube-cells"></div>
+                    <div class="cube-cells"></div>
+                </aside>
+            </article>
+              <article class="side back">
+                <aside class="cube-row">
+                    <div class="cube-cells"></div>
+                    <div class="cube-cells"></div>
+                    <div class="cube-cells"></div>
+                </aside>
+                 <aside class="cube-row">
+                    <div class="cube-cells"></div>
+                    <div class="cube-cells"></div>
+                    <div class="cube-cells"></div>
+                </aside>
+                 <aside class="cube-row">
+                    <div class="cube-cells"></div>
+                    <div class="cube-cells"></div>
+                    <div class="cube-cells"></div>
+                </aside>
+            </article>
+             <article class="side top">
+                <aside class="cube-row">
+                    <div class="cube-cells"></div>
+                    <div class="cube-cells"></div>
+                    <div class="cube-cells"></div>
+                </aside>
+                 <aside class="cube-row">
+                    <div class="cube-cells"></div>
+                    <div class="cube-cells"></div>
+                    <div class="cube-cells"></div>
+                </aside>
+                 <aside class="cube-row">
+                    <div class="cube-cells"></div>
+                    <div class="cube-cells"></div>
+                    <div class="cube-cells"></div>
+                </aside>
+            </article>
+              <article class="side bottom">
+                <aside class="cube-row">
+                    <div class="cube-cells"></div>
+                    <div class="cube-cells"></div>
+                    <div class="cube-cells"></div>
+                </aside>
+                 <aside class="cube-row">
+                    <div class="cube-cells"></div>
+                    <div class="cube-cells"></div>
+                    <div class="cube-cells"></div>
+                </aside>
+                 <aside class="cube-row">
+                    <div class="cube-cells"></div>
+                    <div class="cube-cells"></div>
+                    <div class="cube-cells"></div>
+                </aside>
+            </article>
+             <article class="side left">
+                <aside class="cube-row">
+                    <div class="cube-cells"></div>
+                    <div class="cube-cells"></div>
+                    <div class="cube-cells"></div>
+                </aside>
+                 <aside class="cube-row">
+                    <div class="cube-cells"></div>
+                    <div class="cube-cells"></div>
+                    <div class="cube-cells"></div>
+                </aside>
+                 <aside class="cube-row">
+                    <div class="cube-cells"></div>
+                    <div class="cube-cells"></div>
+                    <div class="cube-cells"></div>
+                </aside>
+            </article>
+              <article class="side right">
+                <aside class="cube-row">
+                    <div class="cube-cells"></div>
+                    <div class="cube-cells"></div>
+                    <div class="cube-cells"></div>
+                </aside>
+                 <aside class="cube-row">
+                    <div class="cube-cells"></div>
+                    <div class="cube-cells"></div>
+                    <div class="cube-cells"></div>
+                </aside>
+                 <aside class="cube-row">
+                    <div class="cube-cells"></div>
+                    <div class="cube-cells"></div>
+                    <div class="cube-cells"></div>
+                </aside>
+            </article>
+        </section>
+    </main>
+</body>
+</html>

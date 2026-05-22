@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            display:grid;
+            grid-template-columns: repeat(2,150px);
+            grid-template-rows: repeat(6,70px);
+            grid-template-areas: "header header"
+                                 "navbar navbar"
+                                 "section aside"
+                                 "article aside"
+                                 "footer footer";
+        }
+        header,
+        nav,
+        section,
+        article,
+        aside,
+        footer{
+            border:2px solid;
+            text-align: center;
+            font-weight: bolder;
+            font-size: xx-large;
+
+        }
+        header{
+            grid-area: header;
+        }
+        nav{
+            grid-area: navbar;
+        }
+        section{
+            grid-area: section;
+        }
+        article{
+            grid-area: article;
+        }
+        aside{
+            grid-area: aside;
+        }
+        footer{
+            grid-area: footer;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <header>Header</header>
+        <nav>Navbar</nav>
+        <section>Section</section>
+        <article>Article</article>
+        <aside>Aside</aside>
+        <footer>Footer</footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Ashoka Chakra</title>
+  <style>
+    body {
+      background-color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .chakra {
+      position: relative;
+      width: 200px;
+      height: 200px;
+      border: 4px solid navy;
+      border-radius: 50%;
+    }
+
+    .spoke {
+      position: absolute;
+      width: 2px;
+      height: 50%;
+      background-color: navy;
+      left: 50%;
+      top: 0;
+      transform-origin: bottom center;
+    }
+
+    /* Generate 24 spokes */
+    /* Each spoke is rotated 15 degrees more than the previous */
+    /* We use nth-child to apply transforms */
+    .chakra .spoke:nth-child(1)  { transform: rotate(0deg); }
+    .chakra .spoke:nth-child(2)  { transform: rotate(15deg); }
+    .chakra .spoke:nth-child(3)  { transform: rotate(30deg); }
+    .chakra .spoke:nth-child(4)  { transform: rotate(45deg); }
+    .chakra .spoke:nth-child(5)  { transform: rotate(60deg); }
+    .chakra .spoke:nth-child(6)  { transform: rotate(75deg); }
+    .chakra .spoke:nth-child(7)  { transform: rotate(90deg); }
+    .chakra .spoke:nth-child(8)  { transform: rotate(105deg); }
+    .chakra .spoke:nth-child(9)  { transform: rotate(120deg); }
+    .chakra .spoke:nth-child(10) { transform: rotate(135deg); }
+    .chakra .spoke:nth-child(11) { transform: rotate(150deg); }
+    .chakra .spoke:nth-child(12) { transform: rotate(165deg); }
+    .chakra .spoke:nth-child(13) { transform: rotate(180deg); }
+    .chakra .spoke:nth-child(14) { transform: rotate(195deg); }
+    .chakra .spoke:nth-child(15) { transform: rotate(210deg); }
+    .chakra .spoke:nth-child(16) { transform: rotate(225deg); }
+    .chakra .spoke:nth-child(17) { transform: rotate(240deg); }
+    .chakra .spoke:nth-child(18) { transform: rotate(255deg); }
+    .chakra .spoke:nth-child(19) { transform: rotate(270deg); }
+    .chakra .spoke:nth-child(20) { transform: rotate(285deg); }
+    .chakra .spoke:nth-child(21) { transform: rotate(300deg); }
+    .chakra .spoke:nth-child(22) { transform: rotate(315deg); }
+    .chakra .spoke:nth-child(23) { transform: rotate(330deg); }
+    .chakra .spoke:nth-child(24) { transform: rotate(345deg); }
+
+  </style>
+</head>
+<body>
+  <div class="chakra">
+    <!-- 24 spokes -->
+    <div class="spoke"></div>
+    <div class="spoke"></div>
+    <div class="spoke"></div>
+    <div class="spoke"></div>
+    <div class="spoke"></div>
+    <div class="spoke"></div>
+    <div class="spoke"></div>
+    <div class="spoke"></div>
+    <div class="spoke"></div>
+    <div class="spoke"></div>
+    <div class="spoke"></div>
+    <div class="spoke"></div>
+    <div class="spoke"></div>
+    <div class="spoke"></div>
+    <div class="spoke"></div>
+    <div class="spoke"></div>
+    <div class="spoke"></div>
+    <div class="spoke"></div>
+    <div class="spoke"></div>
+    <div class="spoke"></div>
+    <div class="spoke"></div>
+    <div class="spoke"></div>
+    <div class="spoke"></div>
+    <div class="spoke"></div>
+  </div>
+</body>
+</html>

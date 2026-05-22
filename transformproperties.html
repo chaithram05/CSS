@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        article{
+            height:100px;
+            width:150px;
+            background-color: brown;
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            font-size: xx-large;
+            font-weight: bolder;
+            
+            /* #translate property
+            /* transform:translateX(200px);
+            transform:translateY(200px); */
+            /* transform: translate(100px,200px); */ 
+            
+
+            /* #scaleproperty
+            transform:scaleX(4.5);
+            transform:scaleY(0.5); */
+            /* transorm:scale(2,0.5);
+             */
+            /* #skewproperty */
+            /* /* transform: skewX(45deg); */
+
+            /* transform: skew(80deg, 60deg); */
+
+            /* #rotateproperty */
+            /* transform:rotate(240 deg); 
+            transition-property: all;
+            transition-duration: 4s;
+            transition-timing-function: ease;
+            transition-delay: 1s; */
+           
+            transition: all 6s ease-in-out 1s;
+        
+        }
+        article:hover{
+            transform: rotate(240deg);
+            border-radius: 80%;
+            width:400px;
+        }
+    </style>
+</head>
+<body>
+    <article>Element</article>
+</body>
+</html>

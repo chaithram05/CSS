@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       *{
+        padding:0;
+        margin:0;
+        box-sizing: border-box;
+       }
+       .navbarcontainer{
+        height:40px;
+        width:100%;
+        background: linear-gradient(to right, #12c209, #c78458, #85c789);
+        display: flex;
+       }
+       .navbarcontainer .logoBlock{
+        height: 40px;
+        flex-basis: 20%;
+        display:flex;
+        align-items: center;
+        background-color: red;
+        justify-content: center;
+       }
+       .navbarcontainer .logoBlock img{
+        height:20px;
+        width:35px;
+        border-radius: 30%;
+       }
+       .navbarcontainer .menuItems{
+        height:40px;
+        flex-basis: 80%;
+       }
+       .navbarcontainer .menuItems ul{
+        height:40px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        list-style-type: none;
+       }
+       .menuItems ul li a{
+        text-decoration: none;
+       color: black; 
+       }
+
+
+    </style>
+</head>
+<body>
+    <nav class="navbarcontainer">
+        <aside class="logoBlock">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbRTiwTJR4uSC0QfV_oOyecg1D31nuI9uCWw&s" alt="">
+        
+        </aside>
+        <aside class="menuItems">
+        <ul>
+            <li><a href="#">HomePage</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Contact us</a></li>
+            <li><a href="#">Login</a></li>
+            <li><a href="#">Register</a></li>
+            </ul>
+            </aside>
+    </nav>
+</body>
+</html>

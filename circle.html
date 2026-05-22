@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .Parent{
+            height: 500px;
+            width: 400px;
+            border-width: 2px;
+            border-style: solid;
+            border-color: red;
+            display:flex;
+            align-items: center;
+            justify-content: space-evenly ;
+            flex-wrap: wrap;
+            margin: 100px auto;
+
+        }
+        .circle{
+            position:relative;
+            width:200px;
+            height:200px;
+            border:4px solid navy;
+            border-radius: 50%;
+        }
+        .line{
+            position:absolute;
+            width: 2px;
+            height: 50%;
+            background-color: yellowgreen;
+            transform-origin: bottom center;
+        }
+    </style>
+</head>
+<body>
+    <section class="Parent">
+    <div class="circle"></div>
+    <div class="line"></div>
+    </section>
+    
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent{
+        height: 500px;
+        width: 400px;
+        border: 2px solid;
+        display:flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    article{
+        height: 100px;
+        width: 100px;
+        border:2px solid;
+    }
+    .child{
+        height:100px;
+        width:100px;
+    }
+    #child1{
+        background-image: linear-gradient(to right,blue,green);
+    }
+    #child2{
+        background-image: linear-gradient(orange 33.33%,white 33.33%,white 66.66%,green 66.66%);
+    }
+    #child3{
+        background-image: repeating-linear-gradient(blue,green,yellow,black,pink 20%);
+    }
+    #child4{
+        background-image: radial-gradient(green,blue,yellow,brown);
+    }
+    #child5{
+
+        background-image: radial-gradient(orange 20%,red  40%, grey 30%);
+    }
+    #child6{
+        background-image: radial-gradient(yellow 25%,white 40%,white 60%,green 30%,green 30%);
+    }
+    #child7{
+        background-image: repeating-radial-gradient(orange  ,yellow,orange 10%);
+    }
+    aside{
+        height:30px;
+        width:30px;
+        border:2px solid green;
+        border-radius:20px;
+        backgroundcolor:#256c
+    }
+    </style>
+</head>
+<body>
+    <section class="parent">
+        <article class="child" id="child1"></article>
+        <article class="child" id="child2"></article>
+        <aside></aside>
+        <article class="child" id="child3"></article>
+        <article class="child" id="child4"></article>
+        <article class="child" id="child5"></article>
+        <article class="child" id="child6"></article>
+        <article class="child" id="child7"></article>
+    </section>
+</body>
+</html>

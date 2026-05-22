@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        section{
+            height:100px;
+            width:100px;
+            background: linear-gradient(red,green,blue);
+            border-radius: 50%;
+            animation-name: task;
+            animation-duration: 6s;
+            animation-delay: 1s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+
+        }
+
+     @keyframes task {
+        0%{
+            width:0;
+        }
+        25%{
+            background: linear-gradient(pink,maroon,violet);
+        }
+        50%{
+            background: linear-gradient(lavender,aliceblue);
+        }
+        75%{
+            background: linear-gradient(black);
+        }
+        100%{
+            width:100%;
+
+        }
+        
+     }   
+    </style>
+</head>
+<body>
+    <section></section>
+    
+</body>
+</html>

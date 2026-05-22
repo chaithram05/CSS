@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .parent{
+        height: 500px;
+        width: 400px;
+        border: 2px solid;
+        display:flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    article{
+        height: 100px;
+        width: 100px;border:2px solid;
+    }
+    .child{
+        height:100px;
+        width:100px;
+    }
+    #child1{
+        background-color: brown;
+    }
+    #child2{
+        background-color: rgb(0, 68, 255);
+    }
+    #child3{
+        background-color: rgba(255,0,255,0.9);
+    }
+    #child4{
+        background-color: hsl(360deg, 50%, 50%);
+    }
+    #child5{
+        background-color: hsla(360deg, 50%, 50%, 0.9);
+    }
+    #child6{
+        background-color: #efefef;
+    }
+    #child7{
+        background-color: #236581;
+    }
+    </style>
+</head>
+<body>
+    <section class="parent">
+        <article class="child" id="child1"></article>
+        <article class="child" id="child2"></article>
+        <article class="child" id="child3"></article>
+        <article class="child" id="child4"></article>
+        <article class="child" id="child5"></article>
+        <article class="child" id="child6"></article>
+        <article class="child" id="child7"></article>
+    </section>
+    
+</body>
+</html>

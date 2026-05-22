@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .Parentcontainer{
+            height:300px;
+            width:400px;
+            border:2px solid;
+            display:flex;
+            flex-direction:row-reverse;
+            align-items: center;
+            justify-content: space-evenly;
+            gap: 30px;
+            flex-wrap: wrap-reverse;
+        }
+        .Childcontainers{
+            height:100px;
+            width:100px;
+            border:2px solid;
+            font-size: xx-large;
+            font-weight: bolder;
+            text-align: center;
+
+        }
+        /* #child1{
+            flex-grow: 4;
+        }
+        #child2{
+            flex-grow: 5;
+        } */
+        #child4{
+            flex-shrink: 5;
+        }
+        #child3{
+            flex-shrink: 2;
+        }
+    </style>
+</head>
+<body>
+    <section class="Parentcontainer">
+        <aside class="Childcontainers" id="child1">1</aside>
+         <aside class="Childcontainers" id="child2">2</aside>
+          <aside class="Childcontainers" id="child3">3</aside>
+          <aside class="Childcontainers" id="child4">4</aside>
+          <aside class="Childcontainers" id="child5">5</aside>
+    </section>
+</body>
+</html>
